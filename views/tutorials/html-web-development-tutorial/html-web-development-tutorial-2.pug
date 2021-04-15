@@ -1,0 +1,68 @@
+extends ../tutorialBase.pug
+
+block content 
+    <div class="container-fluid">
+
+    <div class="row" id="sticky-d">
+        <!-- Video Holder -->
+        <div class="col-md-9 px-0" id="video-box">
+
+        </div>
+
+
+
+        <!-- Course content holder -->
+        <div class="col-md-3 px-0" id="course-content-box">
+            <div class="row mx-0 py-2 px-3 bg-lgrey">
+                <h5> Course Content<i class="mx-2 fas fa-plus" id="toggleCourse"></i></h5>
+            </div>
+            include sidenav.pug
+        </div> 
+        
+        <div class="col-md-9 px-0" id="video-box2">
+            <div class="other">
+                include ../topnav.pug
+
+                .container-fluid 
+                    .container#overview 
+                        <div class="container clearfix py-2 px-0">
+                            <h3 class="mb-3">HTML Tutorial: Installing VS Code &amp; Live Server | Web Development Tutorials #2</h3>
+
+                            <p>In this tutorial, we are going to start our first <strong>HTML tutorial. </strong>In the last tutorial, we have learnt about HTML, CSS, and JavaScript and how the web server reverts with the response after getting the request. We will now learn about how to write HTML code in the <strong>Visual Studio Code.</strong></p>
+                            <p>It is a free open source IDE from Microsoft which makes our work a lot easier. Therefore, I recommend everyone to download this software and install it. Make a folder and then open VS Code in that folder by pressing right-click &gt; Open with code. In case, you can&rsquo;t find the option of opening the particular folder with Visual Studio, you can restart your PC or laptop to make sure that changes have taken place after you installed VS Code.</p>
+                            <p>&ldquo;<strong>The HTML file described below </strong>&rdquo; is an example of a very simple HTML file in which we make further changes to make it look professional. Although you can write all the HTML, CSS, and JavaScript codes in Notepad, I&rsquo;ll not recommend doing so. This is because in Notepad you have to make different files and edit them one by one and also it does not provide the option of <strong>syntax highlighting</strong>. And, I would recommend using the<strong> Chrome Browser </strong>due to its nice functionality and amazing dev tools.&nbsp;</p>
+                            <p>Although this tutorial is not a comprehensive explanation of the VS Code, I want you to know some of its basic functionalities. As soon as you enter the <em>exclamation mark</em> (!) in the editor, it gives you the option of <strong>Emet Abbreviation. </strong>When you click on it, you get a boilerplate sample of the basic HTML format which you can edit further to make a professional website.&nbsp;</p>
+                            <p>If you are using the Visual Studio Code for the first time, it may look a little complicated to you. But as you keep practicing on it, it will make your work effortless and easy. Also, if you are going to write codes of Python or any other language in the future, the VS code IDE will definitely be going to help you. You will find five main buttons on the left panel of the VS Code. These are <em>Explorer, Search, Git, Debugger, and Extensions.&nbsp;</em></p>
+                            <p>One of the most important extensions that I would recommend to install is <strong>Live Server. </strong>After installing it, refresh the Visual Studio Code and click on the <em>Go Live</em> option in the right bottom. The advantage we get by using this extension is that it automatically makes changes in the web page whatever you write in the HTML code.</p>
+                            <p>There are two types of settings options in the Visual Studio Code. The first set of settings is the <em>user settings </em>which are used to manage the user and whole VS code. The second set is the <em>Workspace settings</em> which is for only the particular workspace (opened folder) in which you are currently working. You can also change the keyboard shortcuts according to your needs to make your work efficient.</p>
+                            <p>So these are some basic knowledge and tips about the Visual Studio Code. I hope you have understood all the concepts very easily. The software works the same in macOS and Linux.&nbsp;</p>
+                            <h4>Code as described/written in the video</h4>
+                            <pre class='language-html'><code>
+                                |&lt;!-- This is doctype --&gt;
+                                |&lt;!DOCTYPE html&gt;
+                                |&lt;!-- Our HTML code starts here --&gt;
+                                |&lt;html lang="en"&gt;
+                                |&lt;!-- Our Head tag starts here --&gt;
+                                |&lt;head&gt;
+                                |    &lt;meta charset="UTF-8"&gt;
+                                |    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                |    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                |    &lt;title&gt;This is title&lt;/title&gt;
+                                |&lt;/head&gt;
+                                |&lt;!-- Our Body tag starts here --&gt;
+                                |&lt;body&gt;
+                                |    This is my content inside my body tag
+                                |&lt;/body&gt;
+                                |&lt;/html&gt;
+                            </code></pre>
+                            <div class="my-4 d-flex justify-content-between">
+                                <a class="btn btn-danger" href="/videos/web-development-in-hindi-1">&larr; Previous </a>
+                                <a class="btn btn-danger" href="/videos/web-development-in-hindi-3">Next &rarr;</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    

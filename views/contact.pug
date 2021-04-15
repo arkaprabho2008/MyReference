@@ -1,0 +1,28 @@
+extends base.pug
+
+block css 
+    link(rel="stylesheet", href="../static/css/contact.css")
+
+block content 
+    .container 
+        h1 Contact Us 
+        form(action="/contact", method="POST")
+            <div class="name input">
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" name="name" autocomplete="off" required>
+            </div>
+            <div class="email input">
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" name="email" autocomplete="off" required>
+            </div>
+            <div class="phone input">
+                <label for="phone" class="label">Phone</label>
+                <input type="text" id="phone" name="phone" autocomplete="off" required>
+            </div>
+            <div class="desc input">
+                <label for="desc" class="label">Description</label>
+                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+            </div>
+
+            button(class="btn")  Submit 
+            

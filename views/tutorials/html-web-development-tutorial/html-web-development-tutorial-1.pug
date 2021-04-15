@@ -1,0 +1,51 @@
+extends ../tutorialBase.pug
+
+block content 
+    <div class="container-fluid">
+
+    <div class="row" id="sticky-d">
+        <!-- Video Holder -->
+        <div class="col-md-9 px-0" id="video-box">
+
+        </div>
+
+
+
+        <!-- Course content holder -->
+        <div class="col-md-3 px-0" id="course-content-box">
+            <div class="row mx-0 py-2 px-3 bg-lgrey">
+                <h5> Course Content<i class="mx-2 fas fa-plus" id="toggleCourse"></i></h5>
+            </div>
+
+            include sidenav.pug
+        </div> 
+        
+        <div class="col-md-9 px-0" id="video-box2">
+            <div class="other ">
+                include ../topnav.pug
+
+                .container-fluid 
+                    .container#overview 
+                        h3.my-3.mb-5 Introduction to HTML, CSS, JavaScript & How websites work? | Web Development Tutorials #1
+
+                        p.my-3.mb-3 In this course, we will learn about all the HTML involved in web pages. This course is going to benefit all those who do not know anything and are new to this field. You will get complete knowledge of HTML, CSS, and JavaScript. You will get full information from scratch about web development. Also, those who already have some knowledge can go through the course to learn even further as there are a lot of advanced websites that we will look into by the end of this course.
+
+                        <p>Now let us first understand what HTML, CSS, and Javascript are for? For every website to be designed, HTML (<strong>HyperText Markup Language</strong>) is a must. This is the skeleton of a website. Without it, no website can run. CSS (<strong>Cascading Style Sheets</strong>) adds beauty to that website and JavaScript adds the brain to allow the functioning of that website. Therefore, CSS and JavaScript add beauty and brain to a particular website respectively.&nbsp;</p>
+                        <p>Let us now take another example of a car. The HTML acts as the metallic body of a car and the CSS acts as the color and design of the car. Finally, the engine of a car is like the JavaScript on the website to add functionality.&nbsp;</p>
+                        <p class="mb-3">Normally, a client or a user sends a request to the webserver of the website, he wants to visit. The web server that has its own IP address stores all the files in the backend which can be written in PHP, Python, or Node.js. The web server sends a response to the client in the form of HTML, CSS, and JavaScript.&nbsp;</p>
+
+
+                        <p>Finally, to understand-</p>
+                        <ul>
+                        <li><strong>HTML</strong> is used as a standard language for any website design. It acts as a static skeleton to a web application. It&rsquo;s a well-standardized system.</li>
+                        <li><strong>CSS </strong>is used to handle the presentation of the web page. It makes the website look attractive and beautiful.</li>
+                        <li><strong>JavaScript </strong>allows scripting on your website and makes it completely dynamic in nature. It provides front end scripting for your website and is a high-level dynamic interpreted programming language.</li>
+                        </ul>
+                        <p class="mb-3">Now, HTML, CSS, and JavaScript have a lot of concepts in them which we will take over through the span of this course. Therefore, it cannot be learned all at once. If you are a beginner, learning <strong>HTML up to 80%</strong>, <strong>CSS up to 40-60%</strong>, and<strong> JavaScript up to 50-70%</strong> will be more than enough to start building websites. You need to learn all the concepts simultaneously and co-relate all the things by practicing them.</p>
+
+                        p So this was the introductory part where we have just talked about how websites work . By following the course, we will learn some advanced concepts of HTML and build your website. Therefore, go through the course and start your journey to become a better web developer.
+            </div>
+        </div>
+
+
+    

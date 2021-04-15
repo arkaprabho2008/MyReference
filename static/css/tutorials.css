@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --baloo-bhai: 'Baloo Bhai 2', cursive;
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+
+/* Main styling */
+
+.tutsection{
+    display: flex;
+}
+.box{
+    display: flex;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 3px solid #212529;
+    width: 30vw;
+    height: 58vh;
+    margin: 2%;
+    border-radius: 28px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+.box img{
+    width: 35%;
+    margin: 5px auto;
+    display: flex;
+}
+
+.box h2{
+    font-size: 33px;
+    font-family: var(--roboto);
+    margin: 5px auto;
+    text-align: center;
+}
+
+.box a {
+    position: relative;
+    padding: 10px;
+    font-size: 25px;
+    font-family: var(--poppins);
+    text-decoration: none;
+    color: #212529;
+    border: 2px solid #212529;
+    background-color: white;
+    /* margin-top: 20px; */
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 50%;
+    
+}
+.box a:hover{
+    background-color: aliceblue;
+    box-shadow: 0px 15px 20px 3px rgb(161 161 161);
+    /* box-shadow: inset 0px -9px 20px 0px rgb(161 161 161); */
+    transition: 0.2s;
+}

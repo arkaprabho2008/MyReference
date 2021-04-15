@@ -1,0 +1,106 @@
+extends ../tutorialBase.pug
+
+block content 
+    <div class="container-fluid">
+
+    <div class="row" id="sticky-d">
+        <!-- Video Holder -->
+        <div class="col-md-9 px-0" id="video-box">
+
+        </div>
+
+
+
+        <!-- Course content holder -->
+        <div class="col-md-3 px-0" id="course-content-box">
+            <div class="row mx-0 py-2 px-3 bg-lgrey">
+                <h5> Course Content<i class="mx-2 fas fa-plus" id="toggleCourse"></i></h5>
+            </div>
+            include sidenav.pug
+        </div> 
+        
+        <div class="col-md-9 px-0" id="video-box2">
+            <div class="other">
+                include ../topnav.pug
+
+                .container-fluid 
+                    .container#overview 
+                        <div class="container clearfix py-2 px-0">
+                            <h3 class="mb-3">HTML Tutorial: Title, Script, Link &amp; Meta Tags | Web Development Tutorials #4</h3>
+                            <h4><strong>HTML Tutorial: Title, Script, Link, and Meta Tags</strong></h4>
+                            <p>In the last tutorial, we have learned how the basic structure of a website looks like. In this HTML tutorial, we are going to learn about <em>title, scripts, links, </em>and <em>Meta tags.</em> We will make a new file as &ldquo;<em>tut4.html</em>&rdquo; and then use basic emmet abbreviation as told previously to get the boilerplate HTML template. The objective of this tutorial is to know completely about HTML heads tag and what these contain.&nbsp;</p>
+                            <p>The Meta Tags are used to define the Meta data in an HTML. They are mainly used in SEO (Search Engine Optimization) techniques which help any particular website to rank better in Google or different search engines. It simply boosts the ranking of a webpage to get more traffic on any website.</p>
+                            p 
+                                img(src="../../../static/tutimg/3.png", class="tutimg" alt="")
+                            <p>So let us understand various meta tags.&nbsp;</p>
+                            <ul>
+                            <li>
+                            <pre class="language-markup"><code>&lt;meta charset= &ldquo;UTF-8&rdquo;&gt;</code></pre>
+                            - It simply means that the characters that are used will be of UTF-8. It declares the page&rsquo;s character encoding. It should contain a standard IANA MIME name for character encodings. Moreover, authors are encouraged to use <em>UTF-8.&nbsp;</em></li>
+                            <li>
+                            <pre class="language-markup"><code>&lt;meta name= &ldquo;viewport&rdquo; content= &ldquo;width=device-width, initial-scale=1.0"&gt;</code></pre>
+                            - This tag is used to make your website responsive and adjust its width in such a way that it looks good in both PC or mobile. It helps in making the website mobile friendly also.</li>
+                            <li>
+                            <pre class="language-markup"><code>&lt;meta http-equiv= &ldquo;X-UA-Compatible&rdquo; content= &ldquo;ie=edge&rdquo;&gt;</code></pre>
+                            - It helps any particular website to open in the highest compatibility mode available. It is mostly for those who are still using Internet Explorer. Because there are still some people who have not upgraded their system and are still using the older versions.</li>
+                            </ul>
+                            p 
+                                img(src="../../../static/tutimg/3.png", class="tutimg" alt="")
+                            <p>&nbsp;</p>
+                            <p>To add descriptions and keywords on our website, we still use meta tags.</p>
+                            <ul>
+                            <li>
+                            <pre class="language-markup"><code>&lt;meta name= &ldquo;description&rdquo; content = &ldquo;This is a description&rdquo;&gt;</code></pre>
+                            - To add a description, we have to write the above statement and write your own description in the <em>content </em>part.</li>
+                            <li>
+                            <pre class="language-markup"><code>&lt;meta name= &ldquo;keywords&rdquo; content= &ldquo;html tutorial, css tutorial&rdquo;&gt;</code></pre>
+                            - Keywords are those special words through which a user reach any website. You can add the keywords in the content part of the tag.</li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <p>If we want our website to be indexed in Google or other search engines and bots should follow all the links present on the website, then we have to write-</p>
+                            <pre class="language-markup"><code>&lt;meta name= &ldquo;robots&rdquo; content= &ldquo;INDEX, FOLLOW&rdquo;&gt;</code></pre>
+                            p 
+                                img(src="../../../static/tutimg/3.png", class="tutimg" alt="")
+                            <p>To link our stylesheets named as <em>&ldquo;harry.css&rdquo;</em> in the HTML code, we have to write-</p>
+                            <pre class="language-markup"><code>&lt;link rel= &ldquo;stylesheet&rdquo; href= &ldquo;harry.css&rdquo;&gt;</code></pre>
+                            <p>In the same way, as we have included CSS, we can also include a JavaScript file in &lt;head&gt; tag.</p>
+                            <pre class="language-markup"><code>&lt;script src = &ldquo;harry.js&rdquo;&gt;&lt;/script&gt;</code></pre>
+                            <p>I believe you have understood what all things are present in the head tags of the HTML file. In the upcoming tutorials, we will understand the concept of <em>body</em> tag where we write the main content of the website.&nbsp;</p>
+                                                    <h4>Code as described/written in the video</h4>
+                            <pre class='language-html'>
+                                <code>&lt;!DOCTYPE html&gt;
+                                    |&lt;html lang="en"&gt;
+                                    |&lt;head&gt;
+                                    |    &lt;meta charset="UTF-8"&gt;
+                                    |    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    |    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+                                    |    &lt;meta name="description" content="This is description"&gt;
+                                    |    &lt;meta name="keywords" content="html, html tutorials, web development"&gt;
+                                    |    &lt;meta name="robots" content="INDEX, FOLLOW"&gt;
+                                    |    &lt;title&gt;Document&lt;/title&gt;
+                                    |
+                                    |    &lt;!-- This is how you include external css --&gt;
+                                    |    &lt;link rel="stylesheet" href="harry.css"&gt;
+                                    |
+                                    |    
+                                    |
+                                    |    &lt;!-- This is how you include external JavaScript --&gt;
+                                    |    &lt;script src="harry.js"&gt;&lt;/script&gt;
+                                    |&lt;/head&gt;
+                                    |&lt;body&gt; 
+                                    |
+                                    |
+                                    |&lt;/body&gt;
+                                    |&lt;/html&gt;
+                                </code>
+                            </pre>
+                            <div class="my-4 d-flex justify-content-between">
+                                <a class="btn btn-danger" href="/videos/web-development-in-hindi-3">&larr; Previous </a>
+                                <a class="btn btn-danger" href="/videos/web-development-in-hindi-5">Next &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    
